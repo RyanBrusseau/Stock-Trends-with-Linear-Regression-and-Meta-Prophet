@@ -27,3 +27,6 @@ A linear relationship between Meta_Close and the inflation rate was observed, al
 
 ## Further steps
 Additional features are necessary in order for the models to truly be effective. A feature to model sentiments like fear and greed, along with others to model product launches, global affairs, seasonality and industry changes is necessary to create an effective model. Additional models like decision trees and regularized regression may also prove to be a better fit for the data than simple linear regression. Further feature engineering is also necessary to get the most out of the data.
+
+## Visualizations
+
