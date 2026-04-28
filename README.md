@@ -47,12 +47,39 @@ I began by taking a look at the performance of several tech stocks based on nich
 ## Performance
 Models one and two, while performing exceptionally well on training data, did not perform well on the testing data. The FB prophet model had the same issue, though it produced better results. Model 2 showed improvement, though its r2 value was still below 0.  While linear regression may not be the best for working with time series information, FB Prophet’s failure suggests a different issue. While macroeconomic indicators are an important part of stock movement, sentiment, the performance of rivals, product releases, and a number of other factors influence a stock’s price. While model performance was limited, the project highlighted the difficulty of short term stock forecasting, provided groundwork for further exploration.
 <img width="1402" height="525" alt="Model_1" src="https://github.com/user-attachments/assets/cddf103e-6b37-4b8e-a0ac-4825af4afb92" />
+
 <img width="1402" height="525" alt="Model_2" src="https://github.com/user-attachments/assets/3511cfb1-f585-4df7-b3de-aaca3f39d406" />
+
 <img width="1402" height="525" alt="Prophet_model" src="https://github.com/user-attachments/assets/890c16b8-8ddf-4e77-b4c3-f7bb586aade2" />
 
+## Performance Metrics
+Model 1 
+
+MAE:80.59
+
+R2:-1.54
+
+Model 2
+
+MAE:67.89
+
+R2:-0.77
+
+Model 3
+
+MAE:58.83
+
+R2:-0.35
 
 ## Insights
-A linear relationship between Meta_Close and the inflation rate was observed, along with a curvilinear relationship between Meta_Close and the CPI. EDA revealed quarter four stock performance to be much more varied than quarters one through three.
+--A linear relationship was observed between Meta_Close and Inflation
+  
+--A curvilinear relationship was observed between Meta_Close and the CPI
+
+--While each model performed better than the last, more rigorous feature engineering is necessary
+
+--Stock price fluctuation is influenced by additional features, requiring further exploration and testing
+
 <img width="1402" height="525" alt="Inflation_Rate vs Meta_Close" src="https://github.com/user-attachments/assets/7ab77def-20b3-4f42-8b46-50255cce8082" />
 
 
